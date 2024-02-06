@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BulkyWebRazor_Temp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240121183135_AddCategoryToDb")]
+    [Migration("20240206061532_AddCategoryToDb")]
     partial class AddCategoryToDb
     {
         /// <inheritdoc />
