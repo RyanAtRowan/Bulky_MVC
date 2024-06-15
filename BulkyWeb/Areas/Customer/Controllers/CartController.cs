@@ -112,8 +112,12 @@ namespace BulkyWeb.Areas.Customer.Controllers
                 OrderDetail orderDetail = new()
                 {
                     ProductId = cart.ProductId,
-                    orderhea
-                }
+                    OrderHeaderId = ShoppingCartVM.OrderHeader.Id,
+                    Price = cart.Price,
+                    Count = cart.Count
+                };
+                _unitOfWork.OrderDetail.Add(orderDetail);
+                _unitOfWork.Save();
             }
 
 
